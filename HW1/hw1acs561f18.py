@@ -23,6 +23,8 @@ def logic(envs):
             ans.append("Right\n")
         else:
             ans.append("Left\n")
+    if(len(ans) > 0):
+        ans[-1] = ans[-1][:-1]
     return ans
 
 def output_printing(filename, ans):
